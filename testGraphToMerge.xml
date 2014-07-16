@@ -2,7 +2,7 @@
 <model version="2.1">
   <id>c1204851-fc1f-4bbc-87fc-42348c719043</id>
   <name>TestGraph1</name>
-  <changecounter>32</changecounter>
+  <changecounter>33</changecounter>
   <sib>
     <id>8876e3c3-8ac9-42b6-a2d2-a6211dea4250</id>
     <name>GetMemberFirstName</name>
@@ -110,9 +110,45 @@
   <edge>
     <source>8876e3c3-8ac9-42b6-a2d2-a6211dea4250</source>
     <target>7c2c4bdc-68a0-4b72-a7f0-cc4751b1b28f</target>
-    <point>150.0,255.0</point>
-    <point>334.0,242.0</point>
+    <point>168.0,246.9</point>
+    <point>312.0,246.9</point>
+    <labelposition>500.0,0.0</labelposition>
     <branch>default</branch>
+  </edge>
+  <sib>
+    <id>e71762bb-fae5-430c-9456-2d20e454a5ce</id>
+    <name>PrintConsoleMessage</name>
+    <label>PrintConsoleMessage</label>
+    <sib-uid>io-sibs/PrintConsoleMessage</sib-uid>
+    <taxonomy>de.jabc.sib.common.io.PrintConsoleMessage</taxonomy>
+    <position>249.5,93.0</position>
+    <parameter name="error">
+      <boolean>false</boolean>
+    </parameter>
+    <parameter name="message">
+      <de.metaframe.common.sib.parameter.ContextExpression>
+        <ContextExpressionFoundation>
+          <expression>Hello ${variable}!</expression>
+          <clazz>java.lang.Object</clazz>
+          <classMutable>false</classMutable>
+        </ContextExpressionFoundation>
+      </de.metaframe.common.sib.parameter.ContextExpression>
+    </parameter>
+    <finalbranches>default</finalbranches>
+  </sib>
+  <edge>
+    <source>e71762bb-fae5-430c-9456-2d20e454a5ce</source>
+    <target>7c2c4bdc-68a0-4b72-a7f0-cc4751b1b28f</target>
+    <point>315.0,120.0</point>
+    <point>331.0,243.0</point>
+    <branch>default</branch>
+  </edge>
+  <edge>
+    <source>8876e3c3-8ac9-42b6-a2d2-a6211dea4250</source>
+    <target>e71762bb-fae5-430c-9456-2d20e454a5ce</target>
+    <point>150.0,255.0</point>
+    <point>284.0,129.0</point>
+    <branch>error</branch>
   </edge>
   <parameter>
     <name>memberfirstNameKey2</name>
