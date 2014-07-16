@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <model version="2.1">
-  <id>c1204851-fc1f-4bbc-87fc-42348c719043</id>
+  <id>95dfba38-fcef-4311-a9e3-4ce868f5bb35</id>
   <name>TestGraph1</name>
-  <changecounter>31</changecounter>
+  <changecounter>36</changecounter>
   <sib>
     <id>8876e3c3-8ac9-42b6-a2d2-a6211dea4250</id>
     <name>GetMemberFirstName</name>
-    <label>GetMemberFirstName</label>
+    <label>GetMemberFirstName2</label>
     <sib-uid>families/families/GetMemberFirstName</sib-uid>
     <taxonomy>de.jabc.genesys.ecore.examples.families.sib.families.GetMemberFirstName</taxonomy>
-    <position>84.5,228.0</position>
+    <position>81.0,228.0</position>
     <parameter name="memberKey">
       <de.metaframe.jabc.framework.sib.parameter.ContextKey>
         <ContextKeyFoundation>
           <key>elementKey</key>
-          <scope>GLOBAL</scope>
+          <scope>LOCAL</scope>
           <scopeMutable>true</scopeMutable>
         </ContextKeyFoundation>
       </de.metaframe.jabc.framework.sib.parameter.ContextKey>
@@ -81,7 +81,7 @@
     <parameter name="personKey">
       <de.metaframe.jabc.framework.sib.parameter.ContextKey>
         <ContextKeyFoundation>
-          <key>eObjectKey</key>
+          <key>eObjectKey2</key>
           <scope>GLOBAL</scope>
           <scopeMutable>true</scopeMutable>
         </ContextKeyFoundation>
@@ -99,24 +99,9 @@
     <finalbranches>default</finalbranches>
     <finalbranches>error</finalbranches>
   </sib>
-  <edge>
-    <source>7c2c4bdc-68a0-4b72-a7f0-cc4751b1b28f</source>
-    <target>be1e3696-7db1-47af-b09d-919e6d2686b9</target>
-    <point>346.875,228.0</point>
-    <point>405.7894736842105,159.0</point>
-    <labelposition>500.0,0.0</labelposition>
-    <branch>default</branch>
-  </edge>
-  <edge>
-    <source>8876e3c3-8ac9-42b6-a2d2-a6211dea4250</source>
-    <target>7c2c4bdc-68a0-4b72-a7f0-cc4751b1b28f</target>
-    <point>150.0,255.0</point>
-    <point>334.0,242.0</point>
-    <branch>default</branch>
-  </edge>
   <sib>
     <id>be1e3696-7db1-47af-b09d-919e6d2686b9</id>
-    <name>PrintException</name>
+    <name>PrintException_1</name>
     <label>PrintException</label>
     <sib-uid>io-sibs/PrintException</sib-uid>
     <taxonomy>de.jabc.sib.common.io.PrintException</taxonomy>
@@ -132,13 +117,88 @@
     </parameter>
     <finalbranches>default</finalbranches>
   </sib>
+  <sib>
+    <id>9e50a2ef-71dd-438b-af76-4bcf063a0e2a</id>
+    <name>PrintConsoleMessage</name>
+    <label>PrintConsoleMessage</label>
+    <sib-uid>io-sibs/PrintConsoleMessage</sib-uid>
+    <taxonomy>de.jabc.sib.common.io.PrintConsoleMessage</taxonomy>
+    <position>354.5,348.0</position>
+    <parameter name="error">
+      <boolean>false</boolean>
+    </parameter>
+    <parameter name="message">
+      <de.metaframe.common.sib.parameter.ContextExpression>
+        <ContextExpressionFoundation>
+          <expression>Hello ${variable}!</expression>
+          <clazz>java.lang.Object</clazz>
+          <classMutable>false</classMutable>
+        </ContextExpressionFoundation>
+      </de.metaframe.common.sib.parameter.ContextExpression>
+    </parameter>
+    <finalbranches>default</finalbranches>
+  </sib>
   <edge>
     <source>be1e3696-7db1-47af-b09d-919e6d2686b9</source>
     <target>d02cb858-e4b5-43c6-afe9-ef5ed5d81882</target>
-    <point>420.0,150.0</point>
-    <point>510.0,260.0</point>
+    <point>476.0,173.0</point>
+    <point>543.5,278.0</point>
     <branch>default</branch>
   </edge>
+  <edge>
+    <source>9e50a2ef-71dd-438b-af76-4bcf063a0e2a</source>
+    <target>d02cb858-e4b5-43c6-afe9-ef5ed5d81882</target>
+    <point>454.5,398.0</point>
+    <point>543.5,278.0</point>
+    <branch>default</branch>
+  </edge>
+  <edge>
+    <source>8876e3c3-8ac9-42b6-a2d2-a6211dea4250</source>
+    <target>9e50a2ef-71dd-438b-af76-4bcf063a0e2a</target>
+    <point>184.0,278.0</point>
+    <point>454.5,398.0</point>
+    <branch>error</branch>
+  </edge>
+  <edge>
+    <source>7c2c4bdc-68a0-4b72-a7f0-cc4751b1b28f</source>
+    <target>be1e3696-7db1-47af-b09d-919e6d2686b9</target>
+    <point>362.0,278.0</point>
+    <point>476.0,173.0</point>
+    <branch>default</branch>
+  </edge>
+  <edge>
+    <source>8876e3c3-8ac9-42b6-a2d2-a6211dea4250</source>
+    <target>7c2c4bdc-68a0-4b72-a7f0-cc4751b1b28f</target>
+    <point>184.0,278.0</point>
+    <point>362.0,278.0</point>
+    <branch>default</branch>
+  </edge>
+  <cell>
+    <form>RECT</form>
+    <bounds>
+      <x>262.0</x>
+      <y>228.0</y>
+      <width>142.5</width>
+      <height>60.0</height>
+    </bounds>
+    <linewidth>2.0</linewidth>
+    <linecolor>
+      <red>255</red>
+      <green>0</green>
+      <blue>0</blue>
+      <alpha>255</alpha>
+    </linecolor>
+  </cell>
+  <cell>
+    <form>HTML</form>
+    <bounds>
+      <x>133.5</x>
+      <y>457.5</y>
+      <width>423.0</width>
+      <height>45.0</height>
+    </bounds>
+    <value>&lt;html&gt;&lt;span style=&apos;color:red&apos;&gt;&lt;u&gt;&lt;b&gt;NewFemaleInResource:&lt;/b&gt;&lt;/u&gt;&lt;/span&gt;&lt;br&gt;&lt;span style=&apos;color:black&apos;&gt;(L) Branch &apos;default&apos; changed: SetPersonFullName --&gt; PrintException&lt;/span&gt;&lt;br&gt;&lt;span style=&apos;color:red&apos;&gt;&lt;b&gt;(R) SIB deleted !&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;/html&gt;</value>
+  </cell>
   <parameter>
     <name>memberfirstNameKey2</name>
     <field>memberfirstNameKey</field>
