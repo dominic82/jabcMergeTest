@@ -36,7 +36,7 @@
   </sib>
   <sib>
     <id>7c2c4bdc-68a0-4b72-a7f0-cc4751b1b28f</id>
-    <name>NewFemaleInResource</name>
+    <name>NewFemaleInResource2</name>
     <label>NewFemaleInResource</label>
     <sib-uid>persons/persons/NewFemaleInFile</sib-uid>
     <taxonomy>de.jabc.genesys.ecore.examples.persons.sib.persons.NewFemaleInResource</taxonomy>
