@@ -2,7 +2,7 @@
 <model version="2.1">
   <id>c1204851-fc1f-4bbc-87fc-42348c719043</id>
   <name>TestGraph1</name>
-  <changecounter>31</changecounter>
+  <changecounter>32</changecounter>
   <sib>
     <id>8876e3c3-8ac9-42b6-a2d2-a6211dea4250</id>
     <name>GetMemberFirstName</name>
@@ -13,7 +13,7 @@
     <parameter name="memberKey">
       <de.metaframe.jabc.framework.sib.parameter.ContextKey>
         <ContextKeyFoundation>
-          <key>elementKey</key>
+          <key>elementKey2</key>
           <scope>GLOBAL</scope>
           <scopeMutable>true</scopeMutable>
         </ContextKeyFoundation>
