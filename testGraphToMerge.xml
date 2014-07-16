@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <model version="2.1">
-  <id>c1204851-fc1f-4bbc-87fc-42348c719043</id>
+  <id>70e2c8a5-4405-4a75-939d-4951297e8130</id>
   <name>TestGraph1</name>
   <changecounter>33</changecounter>
   <sib>
     <id>8876e3c3-8ac9-42b6-a2d2-a6211dea4250</id>
     <name>GetMemberFirstName</name>
-    <label>GetMemberFirstName</label>
+    <label>GetMemberFirstName123</label>
     <sib-uid>families/families/GetMemberFirstName</sib-uid>
     <taxonomy>de.jabc.genesys.ecore.examples.families.sib.families.GetMemberFirstName</taxonomy>
     <position>84.5,228.0</position>
@@ -74,14 +74,14 @@
   <sib>
     <id>d02cb858-e4b5-43c6-afe9-ef5ed5d81882</id>
     <name>SetPersonFullName</name>
-    <label>SetPersonFullName</label>
+    <label>SetPersonFullName123</label>
     <sib-uid>persons/persons/SetPersonFullName</sib-uid>
     <taxonomy>de.jabc.genesys.ecore.examples.persons.sib.persons.SetPersonFullName</taxonomy>
     <position>443.5,228.0</position>
     <parameter name="personKey">
       <de.metaframe.jabc.framework.sib.parameter.ContextKey>
         <ContextKeyFoundation>
-          <key>eObjectKey</key>
+          <key>eObjectKey123</key>
           <scope>GLOBAL</scope>
           <scopeMutable>true</scopeMutable>
         </ContextKeyFoundation>
@@ -110,9 +110,8 @@
   <edge>
     <source>8876e3c3-8ac9-42b6-a2d2-a6211dea4250</source>
     <target>7c2c4bdc-68a0-4b72-a7f0-cc4751b1b28f</target>
-    <point>168.0,246.9</point>
-    <point>312.0,246.9</point>
-    <labelposition>500.0,0.0</labelposition>
+    <point>150.0,255.0</point>
+    <point>334.0,242.0</point>
     <branch>default</branch>
   </edge>
   <sib>
@@ -139,15 +138,15 @@
   <edge>
     <source>e71762bb-fae5-430c-9456-2d20e454a5ce</source>
     <target>7c2c4bdc-68a0-4b72-a7f0-cc4751b1b28f</target>
-    <point>315.0,120.0</point>
-    <point>331.0,243.0</point>
+    <point>349.5,143.0</point>
+    <point>362.0,278.0</point>
     <branch>default</branch>
   </edge>
   <edge>
     <source>8876e3c3-8ac9-42b6-a2d2-a6211dea4250</source>
     <target>e71762bb-fae5-430c-9456-2d20e454a5ce</target>
-    <point>150.0,255.0</point>
-    <point>284.0,129.0</point>
+    <point>184.5,278.0</point>
+    <point>349.5,143.0</point>
     <branch>error</branch>
   </edge>
   <parameter>
