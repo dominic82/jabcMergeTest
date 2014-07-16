@@ -6,7 +6,7 @@
   <sib>
     <id>8876e3c3-8ac9-42b6-a2d2-a6211dea4250</id>
     <name>GetMemberFirstName</name>
-    <label>GetMemberFirstName</label>
+    <label>GetMemberFirstName123</label>
     <sib-uid>families/families/GetMemberFirstName</sib-uid>
     <taxonomy>de.jabc.genesys.ecore.examples.families.sib.families.GetMemberFirstName</taxonomy>
     <position>84.5,228.0</position>
@@ -74,14 +74,14 @@
   <sib>
     <id>d02cb858-e4b5-43c6-afe9-ef5ed5d81882</id>
     <name>SetPersonFullName</name>
-    <label>SetPersonFullName</label>
+    <label>SetPersonFullName123</label>
     <sib-uid>persons/persons/SetPersonFullName</sib-uid>
     <taxonomy>de.jabc.genesys.ecore.examples.persons.sib.persons.SetPersonFullName</taxonomy>
     <position>443.5,228.0</position>
     <parameter name="personKey">
       <de.metaframe.jabc.framework.sib.parameter.ContextKey>
         <ContextKeyFoundation>
-          <key>eObjectKey</key>
+          <key>eObjectKey123</key>
           <scope>GLOBAL</scope>
           <scopeMutable>true</scopeMutable>
         </ContextKeyFoundation>
