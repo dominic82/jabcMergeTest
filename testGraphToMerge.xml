@@ -2,7 +2,7 @@
 <model version="2.1">
   <id>95dfba38-fcef-4311-a9e3-4ce868f5bb35</id>
   <name>TestGraph1</name>
-  <changecounter>36</changecounter>
+  <changecounter>37</changecounter>
   <sib>
     <id>8876e3c3-8ac9-42b6-a2d2-a6211dea4250</id>
     <name>GetMemberFirstName</name>
@@ -117,47 +117,12 @@
     </parameter>
     <finalbranches>default</finalbranches>
   </sib>
-  <sib>
-    <id>9e50a2ef-71dd-438b-af76-4bcf063a0e2a</id>
-    <name>PrintConsoleMessage</name>
-    <label>PrintConsoleMessage</label>
-    <sib-uid>io-sibs/PrintConsoleMessage</sib-uid>
-    <taxonomy>de.jabc.sib.common.io.PrintConsoleMessage</taxonomy>
-    <position>354.5,348.0</position>
-    <parameter name="error">
-      <boolean>false</boolean>
-    </parameter>
-    <parameter name="message">
-      <de.metaframe.common.sib.parameter.ContextExpression>
-        <ContextExpressionFoundation>
-          <expression>Hello ${variable}!</expression>
-          <clazz>java.lang.Object</clazz>
-          <classMutable>false</classMutable>
-        </ContextExpressionFoundation>
-      </de.metaframe.common.sib.parameter.ContextExpression>
-    </parameter>
-    <finalbranches>default</finalbranches>
-  </sib>
   <edge>
     <source>be1e3696-7db1-47af-b09d-919e6d2686b9</source>
     <target>d02cb858-e4b5-43c6-afe9-ef5ed5d81882</target>
     <point>476.0,173.0</point>
     <point>543.5,278.0</point>
     <branch>default</branch>
-  </edge>
-  <edge>
-    <source>9e50a2ef-71dd-438b-af76-4bcf063a0e2a</source>
-    <target>d02cb858-e4b5-43c6-afe9-ef5ed5d81882</target>
-    <point>454.5,398.0</point>
-    <point>543.5,278.0</point>
-    <branch>default</branch>
-  </edge>
-  <edge>
-    <source>8876e3c3-8ac9-42b6-a2d2-a6211dea4250</source>
-    <target>9e50a2ef-71dd-438b-af76-4bcf063a0e2a</target>
-    <point>184.0,278.0</point>
-    <point>454.5,398.0</point>
-    <branch>error</branch>
   </edge>
   <edge>
     <source>7c2c4bdc-68a0-4b72-a7f0-cc4751b1b28f</source>
