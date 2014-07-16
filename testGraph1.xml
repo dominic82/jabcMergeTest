@@ -22,7 +22,7 @@
     <parameter name="memberfirstNameKey">
       <de.metaframe.jabc.framework.sib.parameter.ContextKey>
         <ContextKeyFoundation>
-          <key>memberfirstNameKey</key>
+          <key>memberfirstNameKey123</key>
           <scope>GLOBAL</scope>
           <scopeMutable>true</scopeMutable>
         </ContextKeyFoundation>
