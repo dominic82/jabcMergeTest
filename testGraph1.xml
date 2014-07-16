@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <model version="2.1">
-  <id>c1204851-fc1f-4bbc-87fc-42348c719043</id>
+  <id>c0dccc24-d7e6-4769-85bb-2c81e451b7ea</id>
   <name>TestGraph1</name>
   <changecounter>32</changecounter>
   <sib>
@@ -22,7 +22,7 @@
     <parameter name="memberfirstNameKey">
       <de.metaframe.jabc.framework.sib.parameter.ContextKey>
         <ContextKeyFoundation>
-          <key>memberfirstNameKey</key>
+          <key>memberfirstNameKey15</key>
           <scope>GLOBAL</scope>
           <scopeMutable>true</scopeMutable>
         </ContextKeyFoundation>
@@ -36,7 +36,7 @@
   </sib>
   <sib>
     <id>7c2c4bdc-68a0-4b72-a7f0-cc4751b1b28f</id>
-    <name>NewFemaleInResource</name>
+    <name>NewFemaleInResource2</name>
     <label>NewFemaleInResource</label>
     <sib-uid>persons/persons/NewFemaleInFile</sib-uid>
     <taxonomy>de.jabc.genesys.ecore.examples.persons.sib.persons.NewFemaleInResource</taxonomy>
@@ -114,6 +114,32 @@
     <point>503.0,248.0</point>
     <branch>default</branch>
   </edge>
+  <cell>
+    <form>RECT</form>
+    <bounds>
+      <x>84.0</x>
+      <y>228.0</y>
+      <width>135.0</width>
+      <height>60.0</height>
+    </bounds>
+    <linewidth>2.0</linewidth>
+    <linecolor>
+      <red>255</red>
+      <green>0</green>
+      <blue>0</blue>
+      <alpha>255</alpha>
+    </linecolor>
+  </cell>
+  <cell>
+    <form>HTML</form>
+    <bounds>
+      <x>84.0</x>
+      <y>298.0</y>
+      <width>200.0</width>
+      <height>100.0</height>
+    </bounds>
+    <value>&lt;html&gt;&lt;span style=&apos;color:red&apos;&gt;&lt;u&gt;&lt;b&gt;GetMemberFirstName:&lt;/b&gt;&lt;/u&gt;&lt;/span&gt;&lt;br&gt;&lt;span style=&apos;color:black&apos;&gt;(L) Parameter &apos;memberKey&apos; changed: elementKey [GLOBAL] --&gt; elementKey123 [GLOBAL]&lt;/span&gt;&lt;br&gt;&lt;span style=&apos;color:red&apos;&gt;(L) Parameter &apos;memberfirstNameKey&apos; changed: memberfirstNameKey123 [GLOBAL] --&gt; memberfirstNameKey [GLOBAL]&lt;/span&gt;&lt;br&gt;&lt;span style=&apos;color:red&apos;&gt;(R) Parameter &apos;memberfirstNameKey&apos; changed: memberfirstNameKey123 [GLOBAL] --&gt; memberfirstNameKey15 [GLOBAL]&lt;/span&gt;&lt;br&gt;&lt;/html&gt;</value>
+  </cell>
   <values/>
   <branch>
     <name>default</name>
