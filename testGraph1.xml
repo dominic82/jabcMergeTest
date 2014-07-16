@@ -13,7 +13,7 @@
     <parameter name="memberKey">
       <de.metaframe.jabc.framework.sib.parameter.ContextKey>
         <ContextKeyFoundation>
-          <key>elementKey2222</key>
+          <key>elementKey13</key>
           <scope>GLOBAL</scope>
           <scopeMutable>true</scopeMutable>
         </ContextKeyFoundation>
