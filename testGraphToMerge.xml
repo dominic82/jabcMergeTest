@@ -127,7 +127,7 @@
         </ContextExpressionFoundation>
       </de.metaframe.common.sib.parameter.ContextExpression>
     </parameter>
-    <branch>pretest</branch>
+    <branch>test</branch>
     <finalbranches>default</finalbranches>
     <finalbranches>error</finalbranches>
   </sib>
@@ -147,10 +147,10 @@
   </edge>
   <edge>
     <source>57150f98-e92a-4b24-b429-f60a42857507</source>
-    <target>ddc8d963-c5a0-4094-9e49-d7d30181eed6</target>
+    <target>2c524350-3328-4c81-b75e-93de1cea6f1e</target>
     <point>315.0,405.0</point>
-    <point>625.0,236.0</point>
-    <branch>pretest</branch>
+    <point>472.0,250.0</point>
+    <branch>test</branch>
   </edge>
   <values/>
 </model>
