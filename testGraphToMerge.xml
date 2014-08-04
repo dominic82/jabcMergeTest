@@ -2,14 +2,169 @@
 <model version="2.1">
   <id>ef11a1b3-c352-4643-95c1-961e4cb6bab2</id>
   <name>TestGraph1</name>
-  <changecounter>38</changecounter>
+  <changecounter>340</changecounter>
   <sib>
     <id>8876e3c3-8ac9-42b6-a2d2-a6211dea4250</id>
     <name>GetMemberFirstName</name>
     <label>GetMemberFirstName2123</label>
     <sib-uid>families/families/GetMemberFirstName</sib-uid>
     <taxonomy>de.jabc.genesys.ecore.examples.families.sib.families.GetMemberFirstName</taxonomy>
-    <position>81.0,228.0</position>
+    <position>81.0,228.0</position><?xml version="1.0" encoding="ISO-8859-1"?>
+<model version="2.1">
+  <id>c1204851-fc1f-4bbc-87fc-42348c719043</id>
+  <name>TestGraph1</name>
+  <changecounter>39</changecounter>
+  <sib>
+    <id>ec20e2c9-7fc5-4ca8-acf1-14129a4cac02</id>
+    <name>PutInteger</name>
+    <label>PutInteger</label>
+    <sib-uid>basic-sibs/PutInteger</sib-uid>
+    <taxonomy>de.jabc.sib.common.basic.PutInteger</taxonomy>
+    <position>117.0,228.0</position>
+    <parameter name="value">
+      <int>0</int>
+    </parameter>
+    <parameter name="variable">
+      <de.metaframe.jabc.framework.sib.parameter.ContextKey>
+        <ContextKeyFoundation>
+          <key>myint</key>
+          <scope>LOCAL</scope>
+          <scopeMutable>true</scopeMutable>
+        </ContextKeyFoundation>
+      </de.metaframe.jabc.framework.sib.parameter.ContextKey>
+    </parameter>
+    <finalbranches>default</finalbranches>
+    <finalbranches>error</finalbranches>
+    <userobject key="ABC$START">
+      <boolean>true</boolean>
+    </userobject>
+  </sib>
+  <sib>
+    <id>317a07a9-29f1-4088-af85-7d3961a84081</id>
+    <name>PutString</name>
+    <label>PutString</label>
+    <sib-uid>basic-sibs/PutString</sib-uid>
+    <taxonomy>de.jabc.sib.common.basic.PutString</taxonomy>
+    <position>285.0,228.0</position>
+    <parameter name="value">
+      <string>hello world</string>
+    </parameter>
+    <parameter name="variable">
+      <de.metaframe.jabc.framework.sib.parameter.ContextKey>
+        <ContextKeyFoundation>
+          <key>mystring</key>
+          <scope>LOCAL</scope>
+          <scopeMutable>true</scopeMutable>
+        </ContextKeyFoundation>
+      </de.metaframe.jabc.framework.sib.parameter.ContextKey>
+    </parameter>
+    <finalbranches>default</finalbranches>
+    <finalbranches>error</finalbranches>
+  </sib>
+  <sib>
+    <id>2c524350-3328-4c81-b75e-93de1cea6f1e</id>
+    <name>PutBoolean</name>
+    <label>PutBoolean</label>
+    <sib-uid>basic-sibs/PutBoolean</sib-uid>
+    <taxonomy>de.jabc.sib.common.basic.PutBoolean</taxonomy>
+    <position>444.0,228.0</position>
+    <parameter name="value">
+      <boolean>false</boolean>
+    </parameter>
+    <parameter name="variable">
+      <de.metaframe.jabc.framework.sib.parameter.ContextKey>
+        <ContextKeyFoundation>
+          <key>myboolean</key>
+          <scope>LOCAL</scope>
+          <scopeMutable>true</scopeMutable>
+        </ContextKeyFoundation>
+      </de.metaframe.jabc.framework.sib.parameter.ContextKey>
+    </parameter>
+    <finalbranches>default</finalbranches>
+    <finalbranches>error</finalbranches>
+  </sib>
+  <edge>
+    <source>317a07a9-29f1-4088-af85-7d3961a84081</source>
+    <target>2c524350-3328-4c81-b75e-93de1cea6f1e</target>
+    <point>315.0,255.0</point>
+    <point>468.0,260.0</point>
+    <branch>default</branch>
+  </edge>
+  <sib>
+    <id>ddc8d963-c5a0-4094-9e49-d7d30181eed6</id>
+    <name>PutFloat</name>
+    <label>PutFloat</label>
+    <sib-uid>basic-sibs/PutFloat</sib-uid>
+    <taxonomy>de.jabc.sib.common.basic.PutFloat</taxonomy>
+    <position>618.5,228.0</position>
+    <parameter name="value">
+      <float>0.0</float>
+    </parameter>
+    <parameter name="variable">
+      <de.metaframe.jabc.framework.sib.parameter.ContextKey>
+        <ContextKeyFoundation>
+          <key>myfloat</key>
+          <scope>LOCAL</scope>
+          <scopeMutable>true</scopeMutable>
+        </ContextKeyFoundation>
+      </de.metaframe.jabc.framework.sib.parameter.ContextKey>
+    </parameter>
+    <finalbranches>default</finalbranches>
+    <finalbranches>error</finalbranches>
+  </sib>
+  <edge>
+    <source>2c524350-3328-4c81-b75e-93de1cea6f1e</source>
+    <target>ddc8d963-c5a0-4094-9e49-d7d30181eed6</target>
+    <point>480.0,255.0</point>
+    <point>674.0,256.0</point>
+    <branch>default</branch>
+  </edge>
+  <sib>
+    <id>57150f98-e92a-4b24-b429-f60a42857507</id>
+    <name>SwitchString</name>
+    <label>SwitchString</label>
+    <sib-uid>basic-sibs/SwitchString</sib-uid>
+    <taxonomy>de.jabc.sib.common.basic.SwitchString</taxonomy>
+    <position>275.5,378.0</position>
+    <parameter name="caseSensitive">
+      <boolean>true</boolean>
+    </parameter>
+    <parameter name="expression">
+      <de.metaframe.common.sib.parameter.ContextExpression>
+        <ContextExpressionFoundation>
+          <expression>${variable}</expression>
+          <clazz>java.lang.String</clazz>
+          <classMutable>false</classMutable>
+        </ContextExpressionFoundation>
+      </de.metaframe.common.sib.parameter.ContextExpression>
+    </parameter>
+    <branch>pretest</branch>
+    <finalbranches>default</finalbranches>
+    <finalbranches>error</finalbranches>
+  </sib>
+  <edge>
+    <source>ec20e2c9-7fc5-4ca8-acf1-14129a4cac02</source>
+    <target>57150f98-e92a-4b24-b429-f60a42857507</target>
+    <point>150.0,255.0</point>
+    <point>293.0,389.0</point>
+    <branch>default</branch>
+  </edge>
+  <edge>
+    <source>57150f98-e92a-4b24-b429-f60a42857507</source>
+    <target>317a07a9-29f1-4088-af85-7d3961a84081</target>
+    <point>315.0,405.0</point>
+    <point>326.0,253.0</point>
+    <branch>default</branch>
+  </edge>
+  <edge>
+    <source>57150f98-e92a-4b24-b429-f60a42857507</source>
+    <target>ddc8d963-c5a0-4094-9e49-d7d30181eed6</target>
+    <point>315.0,405.0</point>
+    <point>625.0,236.0</point>
+    <branch>pretest</branch>
+  </edge>
+  <values/>
+</model>
     <parameter name="memberKey">
       <de.metaframe.jabc.framework.sib.parameter.ContextKey>
         <ContextKeyFoundation>
