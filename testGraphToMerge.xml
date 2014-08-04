@@ -2,7 +2,7 @@
 <model version="2.1">
   <id>c1204851-fc1f-4bbc-87fc-42348c719043</id>
   <name>TestGraph1</name>
-  <changecounter>40</changecounter>
+  <changecounter>39</changecounter>
   <sib>
     <id>ec20e2c9-7fc5-4ca8-acf1-14129a4cac02</id>
     <name>PutInteger</name>
@@ -127,7 +127,7 @@
         </ContextExpressionFoundation>
       </de.metaframe.common.sib.parameter.ContextExpression>
     </parameter>
-    <branch>test2</branch>
+    <branch>pretest</branch>
     <finalbranches>default</finalbranches>
     <finalbranches>error</finalbranches>
   </sib>
@@ -149,52 +149,8 @@
     <source>57150f98-e92a-4b24-b429-f60a42857507</source>
     <target>ddc8d963-c5a0-4094-9e49-d7d30181eed6</target>
     <point>315.0,405.0</point>
-    <point>644.0,244.0</point>
-    <branch>test2</branch>
-  </edge>
-  <sib>
-    <id>f502974d-3e19-4996-b644-c33a65d7b8b5</id>
-    <name>SwitchString_1</name>
-    <label>SwitchString</label>
-    <sib-uid>basic-sibs/SwitchString</sib-uid>
-    <taxonomy>de.jabc.sib.common.basic.SwitchString</taxonomy>
-    <position>200.5,108.0</position>
-    <parameter name="caseSensitive">
-      <boolean>true</boolean>
-    </parameter>
-    <parameter name="expression">
-      <de.metaframe.common.sib.parameter.ContextExpression>
-        <ContextExpressionFoundation>
-          <expression>${variable}</expression>
-          <clazz>java.lang.String</clazz>
-          <classMutable>false</classMutable>
-        </ContextExpressionFoundation>
-      </de.metaframe.common.sib.parameter.ContextExpression>
-    </parameter>
-    <branch>test</branch>
-    <finalbranches>default</finalbranches>
-    <finalbranches>error</finalbranches>
-  </sib>
-  <edge>
-    <source>ec20e2c9-7fc5-4ca8-acf1-14129a4cac02</source>
-    <target>f502974d-3e19-4996-b644-c33a65d7b8b5</target>
-    <point>150.0,255.0</point>
-    <point>249.0,121.0</point>
-    <branch>error</branch>
-  </edge>
-  <edge>
-    <source>f502974d-3e19-4996-b644-c33a65d7b8b5</source>
-    <target>317a07a9-29f1-4088-af85-7d3961a84081</target>
-    <point>240.0,135.0</point>
-    <point>308.0,236.0</point>
-    <branch>default</branch>
-  </edge>
-  <edge>
-    <source>f502974d-3e19-4996-b644-c33a65d7b8b5</source>
-    <target>2c524350-3328-4c81-b75e-93de1cea6f1e</target>
-    <point>240.0,135.0</point>
-    <point>465.0,232.0</point>
-    <branch>test</branch>
+    <point>625.0,236.0</point>
+    <branch>pretest</branch>
   </edge>
   <values/>
 </model>
